@@ -1,0 +1,37 @@
+extends ./layout/index 
+
+block contenido 
+    main.container.mt-5
+        .row    
+            .col-md-5 
+                img(src="img/nariño.webp", alt="Lugares de Nariño", class="img-fluid", style="height: 100%; object-fit: cover;" )
+            .col-md-7
+                h1= pagina
+                blockquote 
+                    | Nariño, ubicado en el suroccidente de Colombia, es una tierra llena de historia, cultura y paisajes únicos que cautivan a sus visitantes. Su importancia radica en ser un punto de conexión entre el país y la región andina, con una mezcla fascinante de tradiciones indígenas y modernidad.
+                p 
+                    | En el pasado, Nariño fue hogar de importantes culturas precolombinas, como los Pastos y los Quillacingas, cuyos vestigios todavía se pueden encontrar en sus tierras. Además, la región jugó un papel crucial en la independencia de Colombia, destacándose por su resistencia y valentía.
+                p 
+                    | Hoy en día, Nariño ofrece una amplia gama de destinos turísticos, desde las playas del Océano Pacífico hasta los imponentes volcanes de la cordillera de los Andes. La calidez de su gente, su gastronomía y su riqueza natural hacen de esta región un destino imperdible.
+
+    .listado-iconos    
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4        
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")    
+                    h2.mb-4 Seguridad 
+                    p 
+                        | Nariño se esfuerza constantemente por garantizar la seguridad de sus visitantes, ofreciendo rutas vigiladas y servicios turísticos confiables para disfrutar de cada experiencia sin preocupaciones.
+
+                .col-md-4        
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")    
+                    h2.mb-4 Mejores Destinos 
+                    p 
+                        | Desde el Santuario de Las Lajas hasta la Laguna de la Cocha, Nariño cuenta con algunos de los destinos más impresionantes de Colombia, ideales para explorar la naturaleza, la cultura y la historia.
+
+                .col-md-4        
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")    
+                    h2.mb-4 Mejores Precios 
+                    p 
+                        | Con opciones accesibles para todos los presupuestos, Nariño se destaca por ofrecer experiencias inolvidables sin comprometer tu bolsillo, haciendo que cualquier visita sea una inversión que vale la pena.
+                include ./layout/footer

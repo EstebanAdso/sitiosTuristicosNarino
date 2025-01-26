@@ -1,0 +1,11 @@
+.row.proximos-viajes
+    each viaje in viajes
+        .col-md-6.col-lg-4.mb-4
+            .card.h-100
+                img.card-img-top(src=`img/destinos_${viaje.imagen}.jpg`, style="height: 300px; object-fit: cover;")
+                .card-body.d-flex.flex-column
+                    h2.text-truncate= viaje.titulo
+       
+                    p.flex-grow-1= viaje.descripcion.substr(0,100) + '...'
+
+                    a(href=`viajes/${viaje.slug}`, class="btn btn-success btn-block mt-2") Más Información
